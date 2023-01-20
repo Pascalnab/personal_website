@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "burtons";
+ 
+}
+
+body {
+  margin: 0;
+}
+
+
+.lpage_content {
+  
+}
+
+
+#sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: "name pict"
+   "welcome pict"; 
+}
+
+#hey {
+  font-size: 75px;
+  grid-area: name;
+}
+
+#mypic {
+  grid-area: pict;
+}
+
+#welcome {
+  grid-area: welcome; 
+}
